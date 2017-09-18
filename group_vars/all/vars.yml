@@ -1,0 +1,45 @@
+---
+packages:
+  - clang35
+  - cscope
+  - curl
+  - fping
+  - git
+  - git-extras
+  - lsof
+  - htop
+  - iftop
+  - ltrace
+  - mosh
+  - ngrep
+  - subversion
+  - synergy
+  - strace
+  - the_silver_searcher
+  - tig
+  - tmux
+  - vifm
+  - vim
+  - rsync
+
+x11_packages:
+  - dmenu
+  - feh
+  - i3
+  - i3lock
+  - i3status
+  - rxvt-unicode
+  - xauth
+  - xf86-input-keyboard
+  - xf86-input-mouse
+  - xf86-input-synaptics
+  - xf86-video-intel
+  - xf86-video-vesa
+  - xinit
+  - xkill
+  - xorg-drivers
+  - xorg-fonts
+  - xorg-server
+  - xrdb
+  - xset
+  - xterm

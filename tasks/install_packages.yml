@@ -1,0 +1,9 @@
+ - name: Install packages
+   action: package name={{ item }} state=present
+   with_items: 
+     - "{{ packages | pkg_exclude() }}"
+
+ - name: Install X11 packages
+   action: pkgng name={{ item }} state=present
+   with_items: 
+     - "{{ x11_packages }}"
