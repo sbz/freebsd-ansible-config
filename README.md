@@ -1,6 +1,16 @@
 # freebsd-ansible-config
 
-Ansible rules to (re)install your FreeBSD desktop/laptop **[in progress]**.
+[Ansible][1] rules to (re)install your FreeBSD desktop/laptop **[in progress]**.
+
+Requirements
+============
+
+This use [Ansible][1] project. You need to install it with the following
+command:
+
+```
+    sudo pkg install -y ansible
+```
 
 Usage
 =====
@@ -23,3 +33,5 @@ FAQ
 
 This voluntary use no SSH key, it should be run after your operating system 
 installation procedure.
+
+[1]: https://www.ansible.com
