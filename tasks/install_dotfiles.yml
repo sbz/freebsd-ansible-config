@@ -1,0 +1,5 @@
+- name: Install dotfiles
+  git: 
+      repo: 'https://github.com/sbz/dotfiles.git'
+      dest: /tmp/dotfiles
+      update: no
