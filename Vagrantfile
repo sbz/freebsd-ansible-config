@@ -11,7 +11,7 @@ Vagrant.config(API_VERSION) do |config|
 
     config.vm.define "#{name}" do |node|
         # https://app.vagrantup.com/freebsd
-        node.vm.box = "freebsd/FreeBSD-10.4-STABLE"
+        node.vm.box = "freebsd/FreeBSD-11.2-STABLE"
         node.vm.hostname = "#{name}"
         node.ssh.hostname = "vagrant"
         node.ssh.password = "vagrant"
