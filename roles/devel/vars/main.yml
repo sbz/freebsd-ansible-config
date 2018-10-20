@@ -1,0 +1,4 @@
+---
+freebsd_src: "svn+ssh://repo.freebsd.org/base/head"
+freebsd_port: "svn+ssh://repo.freebsd.org/ports/head"
+hostname: "devbox"

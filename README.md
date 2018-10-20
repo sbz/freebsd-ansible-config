@@ -1,6 +1,6 @@
 # freebsd-ansible-config
 
-[Ansible][1] rules to (re)install your FreeBSD desktop/laptop **[in progress]**.
+[Ansible][1] rules to (re)install your FreeBSD laptop or server **[in progress]**.
 
 Requirements
 ============
@@ -15,12 +15,20 @@ command:
 Usage
 =====
 
+* Laptop deployment
+
 In order to run it, you need to use `bootstrap.sh` script and launch
 `ansible-playbook` command with privileged user as below:
 
 ```
     sudo ./bootstrap.sh
-    sudo ansible-playbook -s -k -u $USER -v main.yml
+    sudo ansible-playbook -s -k -u $USER -v playbooks/laptop.yml
+```
+
+* Server deployment
+
+```
+    ansible-playbook -v -l server playbooks/server.yml --ssh-extra-args="-A"
 ```
 
 Goal

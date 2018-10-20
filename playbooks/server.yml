@@ -1,0 +1,7 @@
+---
+- name: deploy server
+  hosts: all
+  gather_facts: true
+  roles:
+    - irssi
+    - devel

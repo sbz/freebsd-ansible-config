@@ -1,0 +1,25 @@
+---
+
+- name: install irssi
+  become: true
+  action: package pkg={{ item }} state=present
+  with_items:
+    - irssi
+    - irssi-scripts
+
+- name: create scripts folder
+  file: path={{ ansible_user_dir }}/.irssi/scripts/autorun state=directory
+
+- name: download irssi themes
+  get_url: url={{ item }} dest={{ ansible_user_dir }}/.irssi/
+  with_items:
+    - https://raw.githubusercontent.com/msparks/irssiscripts/master/themes/fear2.theme
+
+- name: download irssi scripts
+  get_url: url={{ item }} dest={{ ansible_user_dir }}/.irssi/scripts
+  with_items:
+    - https://irssinotifier.appspot.com/script/irssinotifier.pl
+    - https://scripts.irssi.org/scripts/adv_windowlist.pl
+    - https://scripts.irssi.org/scripts/tmux_away.pl
+    - https://scripts.irssi.org/scripts/tmux-nicklist-portable.pl
+    - https://raw.github.com/sbz/misc/master/irssi/url_title.pl

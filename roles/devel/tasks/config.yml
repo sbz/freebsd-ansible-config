@@ -1,0 +1,20 @@
+---
+
+- name: rc.conf config
+  become: true
+  template: dest=/etc/rc.conf src="rc.conf.j2" owner=root group=wheel mode=0644
+
+- name: make.conf config
+  become: true
+  template: dest=/etc/make.conf src="make.conf.j2" owner=root group=wheel mode=0644
+
+- name: loader.conf config
+  become: true
+  template: dest=/boot/loader.conf src="loader.conf.j2" owner=root group=wheel mode=0644
+
+- name: sysctl.conf config
+  become: true
+  template: dest=/etc/sysctl.conf src="sysctl.conf.j2" owner=root group=wheel mode=0644
+
+- name: utf-8 config
+  template: dest={{ ansible_user_dir }}/.login_conf src="login.conf.j2"

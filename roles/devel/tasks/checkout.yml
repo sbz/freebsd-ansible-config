@@ -1,0 +1,13 @@
+---
+
+- name: create svn folder
+  file: state=directory path={{ ansible_user_dir }}/svn mode=0755
+
+- name: checkout svn repository
+  shell: |
+      cd {{ ansible_user_dir }}/svn && svn checkout -q {{ freebsd_src }} src
+      cd {{ ansible_user_dir }}/svn && svn checkout -q {{ freebsd_port }} ports
+
+- name: update svn repository
+  shell: |
+      cd {{ ansible_user_dir }}/svn && svn up src ports

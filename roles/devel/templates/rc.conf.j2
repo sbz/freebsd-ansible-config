@@ -1,0 +1,11 @@
+# {{ ansible_managed }} on {{ ansible_date_time.date }}
+
+fsck_y_enable="YES"
+dumpdev="AUTO"
+sshd_enable="YES"
+ntpd_enable="YES"
+ntpd_sync_on_start="YES"
+local_unbound_enable="YES"
+ifconfig_bge0="DHCP"
+ifconfig_bge1="DHCP"
+hostname="{{ hostname }}"

@@ -1,2 +1,0 @@
-- include: install_packages.yml tags=install,pkgs
-- include: install_dotfiles.yml tags=install,config

@@ -1,4 +1,4 @@
-- name: Install dotfiles
+- name: install dotfiles
   git: 
       repo: 'https://github.com/sbz/dotfiles.git'
       dest: /tmp/dotfiles

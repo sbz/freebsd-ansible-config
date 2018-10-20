@@ -1,0 +1,31 @@
+---
+
+- name: install minimal packages
+  become: true
+  action: package pkg={{ item }} state=present
+  with_items:
+      - python3
+      - vim
+      - htop
+      - tmux
+      - mosh
+      - curl
+      - wget
+      - sudo
+      - p5-libwww
+      - p5-LWP-Protocol-https
+      - lsof
+      - bash
+      - pftop
+      - iftop
+        
+- name: install developers packages
+  become: true
+  action: package pkg={{ item }} state=present
+  with_items:
+      - poudriere
+      - porttools
+      - subversion
+      - git
+      - tig  
+      - colordiff
