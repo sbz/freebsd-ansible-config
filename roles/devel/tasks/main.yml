@@ -2,4 +2,4 @@
 
 - include: config.yml 
 - include: checkout.yml
-- include: packages.yml
+- include: packages.yml tags=pkgs

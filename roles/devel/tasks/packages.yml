@@ -18,14 +18,17 @@
       - bash
       - pftop
       - iftop
-        
+      - the_silver_searcher
+
 - name: install developers packages
   become: true
   action: package pkg={{ item }} state=present
   with_items:
-      - poudriere
-      - porttools
-      - subversion
-      - git
-      - tig  
+      - php-arcanist
       - colordiff
+      - git
+      - portlint
+      - porttools
+      - poudriere
+      - subversion
+      - tig  
