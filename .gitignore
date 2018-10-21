@@ -1,2 +1,3 @@
 /*.retry
 /facts
+/tests/__pycache__
