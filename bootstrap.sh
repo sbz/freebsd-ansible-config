@@ -45,7 +45,7 @@ fi
 ansible --list-hosts all
 
 echo "[*] Run ansible-playbook now!"
-echo " > sudo ansible-playbook -s -k -u $SUDO_USER -v playbooks/laptop.yml"
+echo " > sudo ansible-playbook -b -k -u $SUDO_USER -v playbooks/laptop.yml"
 
 # ping hosts
-ansible all -m ping -s -k -u $SUDO_USER
+ansible all -m ping -b -k -u $SUDO_USER

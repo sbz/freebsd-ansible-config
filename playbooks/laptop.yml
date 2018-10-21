@@ -1,5 +1,5 @@
 ---
  - name: deploy laptop
-   hosts: all
+   hosts: laptop
    roles:
      - laptop
