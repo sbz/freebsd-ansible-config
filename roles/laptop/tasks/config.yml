@@ -1,5 +1,9 @@
 ---
 
+- name: rc.conf config
+  become: true
+  template: dest=/etc/rc.conf src="rc.conf.j2" owner=root group=wheel mode=0644
+
 - name: sysctl.conf config
   become: true
   template: dest=/etc/sysctl.conf src="sysctl.conf.j2" owner=root group=wheel mode=0644
