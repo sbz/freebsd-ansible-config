@@ -3,6 +3,7 @@ packages:
   - clang35
   - cscope
   - curl
+  - devcpu-data
   - fping
   - git
   - git-extras
