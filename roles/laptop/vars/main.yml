@@ -1,2 +1,4 @@
 ---
 hostname: "kakato"
+wired_interface: "em0"
+wireless_interface: "wlan0"
