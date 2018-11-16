@@ -22,7 +22,7 @@ In order to run it, you need to use `bootstrap.sh` script and launch
 
 ```
     sudo ./bootstrap.sh
-    sudo ansible-playbook -b -k -u $USER -v playbooks/laptop.yml
+    ansible-playbook -b -k -u $USER -v playbooks/laptop.yml
 ```
 
 * Server deployment
