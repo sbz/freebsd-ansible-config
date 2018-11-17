@@ -39,7 +39,7 @@ The goal is to be able to have a reproducible and idempotent installation.
 FAQ
 ===
 
-This voluntary use no SSH key, it should be run after your operating system 
-installation procedure.
+The laptop deployment use no SSH key, it should be run after your operating 
+system installation procedure.
 
 [1]: https://www.ansible.com
