@@ -5,7 +5,7 @@
 Requirements
 ============
 
-This use [Ansible][1] project. You need to install it with the following
+This make use of [Ansible][1] project. You need to install it with the following
 command:
 
 ```
