@@ -6,6 +6,7 @@
   with_items:
       - python3
       - vim
+      - vifm
       - htop
       - tmux
       - mosh
