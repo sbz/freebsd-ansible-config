@@ -25,7 +25,7 @@
   become: true
   action: package pkg={{ item }} state=present
   with_items:
-      - php-arcanist
+      - arcanist-php73
       - colordiff
       - git
       - portlint
