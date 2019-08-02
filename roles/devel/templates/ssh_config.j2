@@ -1,0 +1,8 @@
+# {{ ansible_managed }} on {{ ansible_date_time.date }}
+
+PubkeyAcceptedKeyTypes +ssh-dss
+Host github.com
+  User git
+  Hostname ssh.github.com
+  Port 443
+  PreferredAuthentications publickey

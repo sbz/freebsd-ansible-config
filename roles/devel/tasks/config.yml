@@ -18,3 +18,6 @@
 
 - name: utf-8 config
   template: dest={{ ansible_user_dir }}/.login_conf src="login.conf.j2"
+
+- name: user ssh config
+  template: dest={{ ansible_user_dir}}/.ssh/config src="ssh_config.j2"
