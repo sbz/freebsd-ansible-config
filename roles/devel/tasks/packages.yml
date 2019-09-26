@@ -28,8 +28,10 @@
       - arcanist-php73
       - colordiff
       - git
+      - jq
       - portlint
       - porttools
       - poudriere
+      - py36-python-bugzilla
       - subversion
       - tig  
