@@ -5,7 +5,7 @@
   action: package pkg={{ item }} state=present
   with_items:
       - python3
-      - vim
+      - vim-console
       - vifm
       - htop
       - tmux
@@ -20,6 +20,8 @@
       - pftop
       - iftop
       - the_silver_searcher
+      - cmdwatch
+      - mtr-nox11
 
 - name: install developers packages
   become: true
@@ -28,10 +30,12 @@
       - arcanist-php73
       - colordiff
       - git
+      - git-extras
       - jq
       - portlint
       - porttools
       - poudriere
       - py36-python-bugzilla
       - subversion
-      - tig  
+      - tig
+      - psearch
