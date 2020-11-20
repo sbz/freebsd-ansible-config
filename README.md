@@ -1,6 +1,6 @@
 # freebsd-ansible-config
 
-[Ansible][1] rules to (re)install your FreeBSD laptop or server **[in progress]**.
+[Ansible][1] rules to (re)install your FreeBSD laptop or server.
 
 Requirements
 ============
@@ -22,13 +22,24 @@ In order to run it, you need to use `bootstrap.sh` script and launch
 
 ```
     sudo ./bootstrap.sh
-    ansible-playbook -b -k -u $USER -v playbooks/laptop.yml
+    sudo ansible-playbook -b -k -u $USER -v playbooks/laptop.yml
 ```
 
 * Server deployment
 
 ```
-    ansible-playbook -v -l server playbooks/server.yml --ssh-extra-args="-A"
+    sudo ansible-playbook -v -l server playbooks/server.yml --ssh-extra-args="-A"
+```
+
+Specification tests
+===================
+
+Tests are implemented using the Infrastructure test framework [testinfra][2]
+
+We could verify our installation is conformed by launching the spec tests:
+
+```
+    tests/runtests.sh
 ```
 
 Goal
@@ -43,3 +54,4 @@ The laptop deployment use no SSH key, it should be run after your operating
 system installation procedure.
 
 [1]: https://www.ansible.com
+[2]: https://testinfra.readthedocs.io
