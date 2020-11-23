@@ -17,7 +17,7 @@ def test_passwd_file(host):
 
 
 def test_packages_are_installed(host):
-    packages = ('git', 'ltrace', 'python', 'rxvt-unicode', 'vim')
+    packages = ('git', 'ltrace', 'python3', 'i3', 'rxvt-unicode', 'vim')
     for pkg in packages:
         p = host.package(pkg)
         assert p.is_installed

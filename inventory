@@ -8,4 +8,4 @@ ansible_python_interpreter=/usr/local/bin/python3
 kakato
 
 [laptop:vars]
-ansible_python_interpreter=/usr/local/bin/python2
+ansible_python_interpreter=/usr/local/bin/python3

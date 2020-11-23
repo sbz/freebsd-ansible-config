@@ -1,6 +1,7 @@
 ---
 packages:
-  - clang35
+  - bash-static
+  - bash-completion
   - cscope
   - curl
   - devcpu-data
@@ -15,13 +16,14 @@ packages:
   - ngrep
   - subversion
   - synergy
-  - strace
   - the_silver_searcher
   - tig
   - tmux
   - vifm
   - vim
   - rsync
+  - colordiff
+  - python3
 
 x11_packages:
   - dmenu
