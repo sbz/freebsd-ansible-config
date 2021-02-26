@@ -1,5 +1,5 @@
 [server]
-onlinelimit
+freebsd12-do-ldn
 
 [server:vars]
 ansible_python_interpreter=/usr/local/bin/python3
