@@ -22,6 +22,12 @@
       - the_silver_searcher
       - cmdwatch
       - mtr-nox11
+      - tree
+      - lscpu
+      - pciutils
+      - pciids
+      - usbutils
+      - usbids
 
 - name: install developers packages
   become: true
@@ -35,7 +41,7 @@
       - portlint
       - porttools
       - poudriere
-      - py36-python-bugzilla
+      - py??-python-bugzilla
       - subversion
       - tig
       - psearch
