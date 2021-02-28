@@ -8,15 +8,15 @@
     - irssi-scripts
 
 - name: create scripts folder
-  file: path={{ ansible_user_dir }}/.irssi/scripts/autorun state=directory
+  file: path={{ sbz_home_dir }}/.irssi/scripts/autorun state=directory
 
 - name: download irssi themes
-  get_url: url={{ item }} dest={{ ansible_user_dir }}/.irssi/
+  get_url: url={{ item }} dest={{ sbz_home_dir }}/.irssi/
   with_items:
     - https://raw.githubusercontent.com/msparks/irssiscripts/master/themes/fear2.theme
 
 - name: download irssi scripts
-  get_url: url={{ item }} dest={{ ansible_user_dir }}/.irssi/scripts
+  get_url: url={{ item }} dest={{ sbz_home_dir }}/.irssi/scripts
   with_items:
     - https://irssinotifier.appspot.com/script/irssinotifier.pl
     - https://scripts.irssi.org/scripts/adv_windowlist.pl

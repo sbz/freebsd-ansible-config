@@ -48,3 +48,5 @@ x11_packages:
   - xrdb
   - xset
   - xterm
+
+sbz_home_dir: "/home/sbz"
