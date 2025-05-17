@@ -14,6 +14,7 @@ $PKG audit -Fq
 
 # bootstrap requirements
 $PKG install \
+    lang/python311 \
     devel/py-pip \
     sysutils/ansible \
     security/openssh-askpass \
@@ -29,7 +30,7 @@ if [ ! -f /usr/local/etc/ansible/hosts ]; then
 `hostname -f`
 
 [freebsd:vars]
-ansible_python_interpreter=/usr/local/bin/python2
+ansible_python_interpreter=/usr/local/bin/python3.11
 EOF
 
     sed -i.old 's,^#\(inventory.*\),\1,p' /usr/local/etc/ansible/ansible.cfg

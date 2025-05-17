@@ -1,4 +1,4 @@
 ---
-hostname: "kakato"
+hostname: "uchimata"
 wired_interface: "em0"
 wireless_interface: "wlan0"
