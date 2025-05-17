@@ -14,7 +14,7 @@ Vagrant.configure(API_VERSION) do |config|
     config.vm.boot_timeout = 10
     config.vm.define "#{name}" do |node|
         # https://app.vagrantup.com/freebsd
-        node.vm.box = "freebsd/FreeBSD-13.2-RELEASE"
+        node.vm.box = "freebsd/FreeBSD-14.2-RELEASE"
         node.vm.hostname = "#{name}"
         #node.ssh.hostname = "vagrant"
         node.ssh.password = "vagrant"
