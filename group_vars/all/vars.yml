@@ -33,6 +33,7 @@ packages:
 
 x11_packages:
   - dmenu
+  - drm-kmod
   - feh
   - i3
   - i3lock
@@ -51,6 +52,7 @@ x11_packages:
   - xorg-drivers
   - xorg-fonts
   - xorg-server
+  - xrandr
   - xrdb
   - xset
   - xterm
