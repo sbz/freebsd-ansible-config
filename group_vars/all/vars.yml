@@ -57,4 +57,21 @@ x11_packages:
   - xset
   - xterm
 
+extra_packages:
+  - gcc
+  - gcc-arm-embbeded
+  - gdb
+  - portfmt
+  - portlint
+  - portsnap
+  - poudriere
+  - gnupg
+  - firefox
+  - w3m
+  - rustup
+  - ncdu
+  - mtr
+  - pinentry-curses
+  - mutt
+
 sbz_home_dir: "/home/sbz"
