@@ -8,6 +8,18 @@ import platform
 from testinfra import host
 
 
+laptop_profiles = {
+    'uchimata': {
+        'ncpu': 8,
+        'mem': 16,
+    },
+    'kakato': {
+        'ncpu': 4,
+        'mem': 8,
+    }
+}
+
+
 def test_passwd_file(host):
     passwd = host.file("/etc/passwd")
     assert passwd.contains("sbz")
@@ -36,7 +48,11 @@ def test_cpu(host):
 
 def test_n_cpu(host):
     ncpu = host.sysctl('hw.ncpu')
-    assert ncpu == 4
+    hostname = host.sysctl('kern.hostname')
+    for profile in laptop_profiles.items():
+        if profile != hostname:
+            continue
+        assert ncpu == profile['ncpu']
 
 
 def test_physmem(host):
@@ -47,5 +63,9 @@ def test_physmem(host):
         return math.trunc(mem)
 
     physmem = host.sysctl('hw.physmem')
-    assert mem_in_gb(physmem) > 4
-    assert mem_in_gb(physmem) == 8
+    hostname = host.sysctl('kern.hostname')
+    for profile in laptop_profiles.items():
+        if profile != hostname:
+            continue
+        assert mem_in_gb(physmem) > 4
+        assert mem_in_gb(physmem) == profile['mem']
