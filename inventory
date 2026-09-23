@@ -1,11 +1,12 @@
 [server]
-freebsd-ovh
+freebsd-scw
 
 [server:vars]
-ansible_python_interpreter=/usr/local/bin/python3
+ansible_python_interpreter=/usr/local/bin/python3.11
 
 [laptop]
-kakato
+#kakato
+uchimata
 
 [laptop:vars]
-ansible_python_interpreter=/usr/local/bin/python3
+ansible_python_interpreter=/usr/local/bin/python3.11

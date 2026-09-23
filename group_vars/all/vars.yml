@@ -1,29 +1,35 @@
 ---
 packages:
-  - bash-static
+  - barrier
   - bash-completion
+  - bash-static
+  - colordiff
   - cscope
   - curl
-  - devcpu-data
+  - dmidecode
   - fping
   - git
   - git-extras
-  - lsof
   - htop
   - iftop
+  - jq
+  - lsblk
+  - lscpu
+  - lsof
   - ltrace
   - mosh
   - ngrep
+  - python311
+  - rsync
   - subversion
   - synergy
   - the_silver_searcher
   - tig
   - tmux
+  - usbutils
   - vifm
   - vim
-  - rsync
-  - colordiff
-  - python3
+  - pass
 
 x11_packages:
   - dmenu

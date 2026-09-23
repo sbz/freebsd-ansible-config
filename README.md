@@ -9,7 +9,7 @@ This make use of [Ansible][1] project. You need to install it with the following
 command:
 
 ```
-    sudo pkg install -y ansible
+    sudo pkg install -y sysutils/ansible
 ```
 
 Usage
